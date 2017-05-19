@@ -1,4 +1,3 @@
-/* globals test, expect */
 "use strict";
 
 const orcid = require("../lib/orcid");
