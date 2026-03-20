@@ -1,33 +1,19 @@
-# Identifiers - ORCID
+# This package has been deprecated
 
-Extract, validate and normalize [ORCID identifiers](http://orcid.org/).
+This package has been consolidated into [@altmetric/identifiers](https://github.com/altmetric/identifiers-js).
 
-**Current version:** 0.1.1  
-**Supported Node.js versions:** 18, 20, 22, 23
+## Migration
 
-## Installation
+Replace:
 
-Add the following to your `package.json` via `yarn add identifiers-orcid` or `npm install --save identifiers-orcid`:
-
-```shell
-"identifiers-orcid": "^0.1.0"
+```js
+import { extract } from 'identifiers-orcid';
 ```
 
-## Usage
+With:
 
-```javascript
-const orcid = require("identifiers-orcid");
-
-orcid.extract("orcid.org/0000-0002-0088-0058");
-//=> ["0000-0002-0088-0058"]
+```js
+import { extract } from '@altmetric/identifiers/orcid';
 ```
 
-## Other versions
-
-We also maintain versions of this library for [Ruby](https://github.com/altmetric/identifiers) and [PHP](https://github.com/altmetric/php-identifiers).
-
-## License
-
-Copyright © 2017-2024 Altmetric LLP
-
-Distributed under the [MIT License](http://opensource.org/licenses/MIT).
+See the [@altmetric/identifiers README](https://github.com/altmetric/identifiers-js#readme) for full documentation.
